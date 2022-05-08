@@ -16,10 +16,10 @@
 git clone https://github.com/HHvis/NFQ.git
 composer install
 ```
-2. Create MySql databse named 'nfq' or just copy this into terminal. I kept .env file public in case anyone want to change database:
+2. Create MySql databse named 'laravel' or just copy this into terminal. I kept .env file public in case anyone want to change database:
 ```
 php artisan db
-create database nfq;
+create database laravel;
 ```
 3. Initial migrations and seeders for testing purposes
 ```
