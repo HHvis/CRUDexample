@@ -11,24 +11,21 @@
 
 <h2 align="center">Follow these steps in order to install the project</h2>
 
-1. Git Clone
+1. Firstly Clone the project and install all needed files
 ```
 git clone https://github.com/HHvis/NFQ.git
-```
-2. In terminal, go to the project folder - cd NFQ, and type
-```
 composer install
 ```
-3. Create MySql databse named 'nfq' or just copy this into terminal
+2. Create MySql databse named 'nfq' or just copy this into terminal. I kept .env file public in case anyone want to change database:
 ```
 php artisan db
-create database nfq
+create database nfq;
 ```
-4. Initial migrations and seeders for testing purposes
+3. Initial migrations and seeders for testing purposes
 ```
 php artisan migrate --seed
 ```
-6. Run the project
+4. Run the project
 ```
 php artisan serve
 ```
