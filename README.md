@@ -11,7 +11,7 @@
 
 <h2 align="center">Follow these steps in order to install the project</h2>
 
-1. Firstly Clone the project and install all needed files
+1. Firstly Clone the project and install all needed files (navigate to directory before installing - 'cd nfq').
 ```
 git clone https://github.com/HHvis/NFQ.git
 composer install
