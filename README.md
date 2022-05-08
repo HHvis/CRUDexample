@@ -16,7 +16,7 @@
 git clone https://github.com/HHvis/NFQ.git
 composer install
 ```
-2. Create MySql databse named 'laravel' or just copy this into terminal. I kept .env file public in case anyone want to change database:
+2. Create MySql databse named 'laravel' or just copy this into terminal. I kept .env file public in case anyone want to change the database:
 ```
 php artisan db
 create database laravel;
@@ -29,4 +29,4 @@ php artisan migrate --seed
 ```
 php artisan serve
 ```
-![Project](public/images/end.png?raw=true "Title")
+![Project](public/images/end.png?raw=true "View Blade")
