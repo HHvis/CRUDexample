@@ -29,4 +29,4 @@ php artisan migrate --seed
 ```
 php artisan serve
 ```
-![Project](public/images/end?raw=true "Title")
+![Project](public/images/end.png?raw=true "Title")
