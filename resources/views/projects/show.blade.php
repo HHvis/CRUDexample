@@ -17,7 +17,7 @@
 @foreach ($students as $student)
     <tr class="align-middle">
         <td class="text-left">{{ ucwords($student->name) }}</td>
-        <td>Group #?</td>
+        <td> - </td>
         <td>
             <form action="{{ route('students.destroy', $student->id) }}" method="POST">
                 @csrf

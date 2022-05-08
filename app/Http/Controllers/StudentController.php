@@ -37,7 +37,7 @@ class StudentController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'name' => 'required|unique:students|max:100|min:2',
+            'name' => 'required|alpha|unique:students|max:100|min:2',
         ],
         [ 'name.required' => 'The :attribute field can not be blank.']);
 
