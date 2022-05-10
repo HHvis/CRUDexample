@@ -24,10 +24,7 @@ class GroupController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
-        //
-    }
+
 
     /**
      * Store a newly created resource in storage.
@@ -37,16 +34,7 @@ class GroupController extends Controller
      */
     public function store(Request $request)
     {
-        $this->validate($request, [
-            'student_id' => 'required',
-        ]);
-        
-        $group = new Group();
-        $group->student_id = auth()->students()->id;
-        $group->project_id = auth()->projects()->id;
-        $group->save();
-        
-        return redirect('projects.index');
+
     }
 
     /**
@@ -92,5 +80,17 @@ class GroupController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function validator(array $group){
+    return Validator::make($group, [
+        'student_id' => 'required|int',
+    ]);
+}
+    public function create(array $group)
+    {
+        return Group::create([
+            'student_id' => $group['student_id'],
+        ]);
     }
 }

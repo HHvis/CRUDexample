@@ -9,7 +9,7 @@
     <tr>
         <td>
         @for ($j = 0; $j < $project->studentsPerGroup; $j++)
-        <select name="students" class="form-control form-control-sm" style="overflow:auto; max-height:260;">
+        <select name="student_id" required="required" class="form-control form-control-sm" style="overflow:auto; max-height:260;">
             <option  value="" selected disabled>Assign Student</option>
             @foreach ($students as $student)
             <option value="{{ $student->id }}">{{ ucwords($student->name) }} {{ $loop->iteration . '/' . $loop->count }}</option>
@@ -23,3 +23,4 @@
 @endfor
 </div>
 </form>
+
