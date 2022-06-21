@@ -13,9 +13,9 @@ To Whom It May Concern:
 
 <h2 align="center">Follow these steps in order to install the project</h2>
 
-1. Firstly Clone the project and install all needed files (navigate to directory before installing - 'cd nfq').
+1. Firstly Clone the project and install all needed files (navigate to directory before installing - 'cd CRUDexample').
 ```
-git clone https://github.com/HHvis/NFQ.git
+git clone https://github.com/HHvis/CRUDexample.git
 composer install
 ```
 2. Create MySql databse named 'laravel' or just copy what's below into terminal. I kept .env file public in case anyone want to change the database:
